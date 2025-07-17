@@ -131,9 +131,8 @@ button[type="submit"] {
   font-size: 14px;
 }
 
-.caption {
+.caption{
   padding: 20px;
- 
 }
 
 /* profile */
@@ -142,9 +141,10 @@ button[type="submit"] {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   border-top: 1px solid #ccc;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .member {
@@ -182,8 +182,41 @@ button[type="submit"] {
   line-height: 1.4;
 }
 
+.profile-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
 
-.project {
+.profile-section h2 {
+  font-size: 32px;
+  padding-top: 60px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-section h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #222;
+  
+}
+
+.profile-section ul {
+  padding-left: 20px;
+}
+
+.profile-section li {
+  margin-bottom: 8px;
+}
+
+
+/* porto.html */
+/* .project {
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -204,8 +237,51 @@ button[type="submit"] {
 .project p {
   padding: 0 10px 10px;
   font-size: 14px;
+} */
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #f9f9f9; /* light background */
 }
 
+.project {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project h4 {
+  margin: 15px 0 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.project p {
+  padding: 0 15px;
+  font-size: 0.95em;
+  color: #666;
+}
+
+
+/* contact.html */
 .location-info {
   margin-top: 40px;
   padding: 20px;
