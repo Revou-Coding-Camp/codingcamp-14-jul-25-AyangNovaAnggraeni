@@ -311,12 +311,12 @@ button[type="submit"] {
 
 
 footer {
-  background-color: #1a202c; 
-  color: #f1f1f1;            
+  /* background-color: #1a202c;  */
+  color: #1b1b1b;            
   text-align: center;
   padding: 20px;
   font-size: 14px;
-  border-top: 2px solid #4a5568;
+  border-top: 1px solid #4a5568;
   margin-top: 40px;
 }
 
@@ -326,7 +326,7 @@ footer p {
 }
 
 footer a {
-  color: #90cdf4;
+  color: #2362bb;
   text-decoration: none;
 }
 footer a:hover {
