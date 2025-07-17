@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">VE</div>
+    <nav>
+      <a href="index.html"><button>Home</button></a>
+      <a href="profile.html"><button>Our Profile</button></a>
+      <a href="porto.html"><button>Portfolio</button></a>
+      <a href="contact.html"><button>Message Us</button></a>
+    </nav>
+  </header>
+
+  <section class="welcome">
+    <h2 id="welcomeText">Hi _____, Welcome To Website</h2>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="banner">1366x578</div>
+  </section>
+
+  <section class="headquarter">
+    <h3>Our Headquarter</h3>
+    <div class="cities">
+      <div class="city">
+        <div class="circle"></div>
+        <p>Jakarta</p>
+      </div>
+      <div class="city">
+        <div class="circle"></div>
+        <p>Bandung</p>
+      </div>
+      <div class="city">
+        <div class="circle"></div>
+        <p>Surabaya</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Message Us</h3>
+    <form id="contactForm">
+      <label>Nama: <input type="text" id="name" required></label>
+      <label>Tanggal Lahir: <input type="date" id="birthdate" required></label>
+      <label>Jenis Kelamin:</label>
+      <label><input type="radio" name="gender" value="Laki-Laki" checked> Laki-Laki</label>
+      <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+      <label>Pesan: <textarea id="message" required></textarea></label>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="message-output" id="messageOutput"></div>
+  </section>
+
+  <footer>
+    <p>Created By RevoU</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
