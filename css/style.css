@@ -20,22 +20,6 @@ header {
   padding: 10px;
 }
 
-/* Nav styling */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-  justify-content: left;
-  margin-left: auto;
-}
-
-nav a button {
-  padding: 6px 12px;
-  cursor: pointer;
-  margin-left: 10px;
-  padding: 6px 12px;
-}
 
 /* Hero/banner section */
 .hero {
@@ -83,22 +67,32 @@ nav a button {
   }
 }
 
-/* responsive navbar */
+/* Desktop Nav */
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 20px;
+  list-style: none;
 }
 
 .nav-links li a {
-  color: rgb(53, 50, 50);
   text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #e0e0e0;
 }
 
 .hamburger {
   display: none;
   font-size: 24px;
   cursor: pointer;
+  
 }
 
 .close-btn {
@@ -107,11 +101,10 @@ nav a button {
   cursor: pointer;
   padding: 20px;
   color: #333;
-  display: none; /* Hidden by default */
+  display: none; 
   text-align: right;
 }
 
-/* Responsive Sidebar */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -138,11 +131,24 @@ nav a button {
     padding: 10px 20px;
   }
 
-  .close-btn {
-    display: block; /* Show close button */
+  .nav-links li a {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 10px 0; 
+    display: block; 
+    width: 100%;
   }
 
+  .nav-links li a:hover {
+    background-color: rgba(0, 0, 0, 0.05); 
+  }
+
+  .close-btn {
+    display: block; 
+  }
 }
+
 
 .welcome {
   padding: 20px;
