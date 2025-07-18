@@ -1,5 +1,4 @@
-// js/script.js
-
+// handling user input and displaying messages
 document.getElementById('contactForm').addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -26,3 +25,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     welcome.innerText = `Hi ${name}, Welcome To Website`;
   }
 });
+
+
+// handling the hamburger menu toggle
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+
+

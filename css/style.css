@@ -83,6 +83,66 @@ nav a button {
   }
 }
 
+/* responsive navbar */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: rgb(53, 50, 50);
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 20px;
+  color: #333;
+  display: none; /* Hidden by default */
+  text-align: right;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #f8fe80;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 15px;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+  }
+
+  .close-btn {
+    display: block; /* Show close button */
+  }
+
+}
 
 .welcome {
   padding: 20px;
