@@ -79,7 +79,7 @@ header {
   padding: 10px 20px;
   border: 1px solid #ccc;
   background-color: #f7f7f7;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #000;
   transition: background-color 0.3s;
 }
@@ -188,8 +188,6 @@ header {
   align-items: center;
 }
 
-
-
 .circle {
   width: 80px;
   height: 80px;
@@ -206,8 +204,6 @@ header {
   height: 100%;
   object-fit: cover;
 }
-
-
 
 .contact {
   padding: 30px 20px;
@@ -258,7 +254,6 @@ button[type="submit"] {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin-top: 40px; */
   border-top: 1px solid #ccc;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -331,9 +326,6 @@ button[type="submit"] {
   margin-bottom: 8px;
 }
 
-
-
-
 .portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -400,10 +392,6 @@ button[type="submit"] {
 .address-details ul li {
   margin: 5px 0;
 }
-
-
-
-
 
 footer {
   /* background-color: #1a202c;  */
