@@ -7,15 +7,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">VE</div>
-    <nav>
-      <a href="index.html"><button>Home</button></a>
-      <a href="profile.html"><button>Our Profile</button></a>
-      <a href="porto.html"><button>Portfolio</button></a>
-      <a href="contact.html"><button>Message Us</button></a>
-    </nav>
-  </header>
+    <header>
+  <div class="logo">VE</div>
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+       <div class="close-btn" onclick="toggleMenu()">✖</div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Our Profile</a></li>
+      <li><a href="porto.html">Portfolio</a></li>
+      <li><a href="contact.html">Message Us</a></li>
+    </ul>
+  </nav>
+</header>
 
    <main>
     <div class="caption">
